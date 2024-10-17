@@ -1,0 +1,155 @@
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border-left: 8px solid #4CAF50;
+    background: radial-gradient(circle, #ffffff 60%, #e0f7fa);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    -webkit-background-clip: text; /* For webkit browsers like Chrome, Safari */
+    background-clip: text; /* Standard for non-webkit browsers */
+    -webkit-text-fill-color: transparent; /* Text color becomes transparent to show gradient */
+}
+
+/* Form group styling */
+.form-grp {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Input styling */
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+    outline: none;
+    background-color: #fff;
+}
+
+/* Error message styling */
+.error {
+    color: #e74c3c;
+    font-size: 0.85em;
+    height: 20px;
+    margin-top: 5px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #4CAF50, #2ecc71);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.4s, transform 0.3s;
+}
+
+button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(39, 174, 96, 0.3);
+}
+
+/* Success message styling */
+#success-container {
+    display: none;
+}
+
+#success-container h2 {
+    color: #2ecc71;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#goBackBtn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#goBackBtn:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

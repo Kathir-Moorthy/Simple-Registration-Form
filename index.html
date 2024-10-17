@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Registration Form</title>
+    <link rel="icon" href="rgs.png" type="image/png">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="form-container">
+        <h2>Registration Form</h2>
+        <form id="rForm">
+            <div class="form-grp">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name">
+                <span id="nameerror" class="error"></span>
+            </div>
+            <div class="form-grp">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email">
+                <span id="emailerror" class="error"></span>
+            </div>
+            <div class="form-grp">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <span id="passworderror" class="error"></span>
+            </div>
+            <button type="submit" id="subbtn" disabled>Register</button>
+        </form>    
+    </div>
+
+    <!-- Success message container -->
+    <div class="container" id="success-container" style="display: none;">
+        <h2>Registered Successfully!</h2>
+        <button id="goBackBtn">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
